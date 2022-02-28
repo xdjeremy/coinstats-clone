@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import RouteSwitch from './RouteSwitch';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RouteSwitch />
   </React.StrictMode>,
   document.getElementById('root')
 );

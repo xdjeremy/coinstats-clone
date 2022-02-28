@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import 'variables';
+
+// * {
+//   outline: 1px solid blue;
+// }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $orange;
+  background-color: $black;
+  letter-spacing: 0.09rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+
+  .hero-text {
+    display: flex;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    color: $white;
+    min-width: 300px;
+    max-width: 30%;
+    text-align: center;
+  }
+
+  p {
+    color: $grey;
+    margin-top: 0;
+  }
+}
+
+.connect-to-apps {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 30px;
+
+  img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .connect-to-apps-item {
+    border: 1px solid $darkergrey;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      border: 1px solid $orange;
+      box-shadow: darken($color: $orange, $amount: 50%) 0px 8px 24px;
+      transform: translate(0, -5px);
+    }
+
+    p {
+      font-size: 0.7rem;
+      text-align: center;
+      color: $grey;
+      margin-top: 10px;
+    }
+
+    .connect {
+      color: $white;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  }
+}
+
+.connect-to-other {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .or {
+    color: darken($color: $grey, $amount: 30%);
+  }
+
+  .connect-to-other-button {
+    color: $black;
+    background-color: $orange;
+    border: 10px solid $orange;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding: 5px 50px;
+    font-size: 1.1rem;
+    letter-spacing: normal;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($color: $orange, $amount: 2%);
+      border: 10px solid lighten($color: $orange, $amount: 2%);
+    }
+  }
+
+  .view-demo {
+    color: $white;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    letter-spacing: normal;
+    cursor: pointer;
+  }
+}

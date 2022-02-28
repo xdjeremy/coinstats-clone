@@ -1,0 +1,84 @@
+@import 'variables';
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  // position: fixed;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigation {
+  border-right: 1px solid;
+  border-color: darken($color: $grey, $amount: 50%);
+  padding-right: 30px;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+
+  li {
+    list-style-type: none;
+    text-decoration: none;
+    color: $grey;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .portfolio-tracker {
+    border-radius: 100px;
+    border: solid 8px $darkergrey;
+    background-color: $darkergrey;
+    padding: 1px 5px;
+  }
+}
+
+.search {
+  background-color: $black;
+  border: 2px solid $darkergrey;
+  border-radius: 10px;
+  height: 2.5rem;
+  font-weight: 500;
+  padding: 0 15px;
+
+  &:focus {
+    caret-color: $orange;
+    outline: none;
+    border: 2px solid $orange !important;
+  }
+}
+
+.login {
+  color: $orange;
+}
+
+.get-started {
+  background-color: $orange;
+  color: $black;
+  border: 10px solid $orange;
+  border-radius: 100px;
+  padding: 2px 15px;
+}
+
+.logo {
+  width: 95px;
+  height: 20px;
+  margin-right: 100px;
+}

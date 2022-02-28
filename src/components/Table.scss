@@ -1,0 +1,36 @@
+@import 'variables';
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+table {
+  border: 2px solid $darkergrey;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 60%;
+
+  th {
+    color: $grey;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+
+  tr {
+    text-align: center;
+    color: $white;
+    font-size: 1.1rem;
+  }
+
+  .data {
+    height: 50px;
+  }
+
+  .rank {
+    color: $grey;
+    font-size: 0.9rem;
+  }
+}
